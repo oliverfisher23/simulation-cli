@@ -1,0 +1,28 @@
+{
+  "name": "simulation-cli",
+  "version": "0.1.0",
+  "description": "Command-line tool for simulations",
+  "type": "module",
+  "bin": {
+    "sim": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test \"test/**/*.test.ts\"",
+    "check": "npm run typecheck && npm test",
+    "wt": "bash scripts/worktree.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,4 @@
+# Gitignored files to copy into each new worktree (gitignore syntax).
+# Used by `claude --worktree` and by scripts/worktree.sh.
+.env
+.env.local
